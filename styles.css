@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image : url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+li.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+footer {
+    position: fixed;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* change background opacity to 25% */
+    background-color: #181515;
+    
+    
+    
+    padding: 2px;
+    text-align: center;
+    /* TODO: Align footer to bottom */
+}
+
+
+/* Add Favicon */
+link[rel="icon"] {
+    /* TODO: Replace with your own favicon */
+    href: url("noun-list-7084193");
+    type: image/gif;
+    sizes: 16x16;
+}
